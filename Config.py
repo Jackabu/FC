@@ -25,7 +25,7 @@ class Messages():
         
         "**Commmands**\n__/ForceSubscribe - To get the current settings.\n/ForceSubscribe no/off/disable - To turn of ForceSubscribe.\n/ForceSubscribe {channel username or channel ID} - To turn on and setup the channel.\n/ForceSubscribe clear - To unmute all members who muted by me.\n/source_code - To get bot source code😍\n\nNote: /FSub is an alias of /ForceSubscribe__",
         
-       "**Devloped By @jackssmit**"
+       "**Developer By @jackssmit**"
       ]
       SC_MSG = "**Dude [{}](tg://user?id={})**\n click on below button to Join Dumbleech, for more help ask to developer "
 
