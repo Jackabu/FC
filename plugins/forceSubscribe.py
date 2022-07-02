@@ -33,7 +33,7 @@ async def _onUnMuteRequest(client, cb):
         await client.send_message(chat_id, f"❗ **{cb.from_user.mention} is trying to UnMute himself but i can't unmute him because i am not an admin in this chat add me as admin again.**\n__#Leaving this chat...__")
         await client.leave_chat(chat_id)
       else:
-        await client.answer_callback_query(cb.id, text="❗ Warning: Don't click the button if you can speak freely.", show_alert=True)
+        await client.answer_callback_query(cb.id, text="Dude Warning: Don't click the button if you can speak freely.", show_alert=True)
 
 
 
@@ -54,15 +54,15 @@ async def _check_member(client, message):
       except UserNotParticipant:
         try:
           sent_message = await message.reply_text(
-              " {} , you are not subscribed to 𝗗𝗨𝗠𝗕 - 𝗥𝗲𝘃𝗼𝗸𝗲 𝗟𝗶𝗻𝗸𝘀 yet. Please join using below button and press the UnMute Me button to unmute yourself.".format(message.from_user.mention, channel, channel),
+              " {} , you are not subscribed to 𝗗𝗨𝗠𝗕 - 𝗥𝗲𝘃𝗼𝗸𝗲 𝗟⚡𝗻𝗸𝘀 yet. Dude join using below button and press the 𝗨𝗻-𝗠𝘂𝘁𝗲 button to unmute yourself.".format(message.from_user.mention, channel, channel),
               disable_web_page_preview=True,
              reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("𝗗𝗨𝗠𝗕 - 𝗥𝗲𝘃𝗼𝗸𝗲 𝗟𝗶𝗻𝗸𝘀", url=channel_url)
+                    InlineKeyboardButton("𝗗𝗨𝗠𝗕 - 𝗥𝗲𝘃𝗼𝗸𝗲 𝗟⚡𝗻𝗸𝘀", url=channel_url)
                 ],
                 [
-                    InlineKeyboardButton("UnMute Me", callback_data="onUnMuteRequest")
+                    InlineKeyboardButton("𝗨𝗻-𝗠𝘂𝘁𝗲", callback_data="onUnMuteRequest")
                 ]
             ]
         )
